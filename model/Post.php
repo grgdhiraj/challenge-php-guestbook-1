@@ -6,14 +6,14 @@ class Post
 private $title;
 private $date;
 private $content;
-private $authername;
+private $name;
 
- public function __construct(string $title,int $date,string $content,string $authername)
+ public function __construct(string $_title,int $_date,string $_content,string $_name)
  {
-     $this->title = $title;
-     $this->date = $date;
-     $this->content = $content;
-     $this->authername = $authername;
+     $this->title = $_title;
+     $this->date = $_date;
+     $this->content = $_content;
+     $this->name = $_name;
  }
 
     /**
@@ -43,9 +43,9 @@ private $authername;
     /**
      * @return string
      */
-    public function getAuthername(): string
+    public function getName(): string
     {
-        return $this->authername;
+        return $this->name;
     }
 
 }
