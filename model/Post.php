@@ -8,7 +8,7 @@ private $date;
 private $content;
 private $name;
 
- public function __construct(string $_title,int $_date,string $_content,string $_name)
+ public function __construct(string $_title,string $_date,string $_content,string $_name)
  {
      $this->title = $_title;
      $this->date = $_date;
@@ -27,7 +27,7 @@ private $name;
     /**
      * @return int
      */
-    public function getDate(): int
+    public function getDate(): string
     {
         return $this->date;
     }

@@ -14,14 +14,6 @@ class PostLoader
        // var_dump($list);
         return $list;
     }
-    public function appendPost() : array {
 
-        $list = [];
-        $json = json_encode(file_put_contents("posts.json"),true);
-        foreach ($json AS $jsonPost){
-            $list[] = new Post($jsonPost["title"],(int)$jsonPost["date"],$jsonPost["content"],$jsonPost["name"]);
-        }
-        return $list;
-    }
 
 }
