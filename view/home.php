@@ -1,5 +1,6 @@
 <?php
 declare(strict_types=1);
+
 ?>
 <!doctype html>
 <html lang="en">
@@ -11,17 +12,17 @@ declare(strict_types=1);
     <title>GUESTBOOK</title>
 </head>
 <body class="text-center">
-
-    <form id="gb-sign" method="get">
+//add action to the action
+    <form action="" method="get">
         <h1>Welcome to our GuestBook</h1>
         <label for="gb-title">Title:</label>
-        <input id="title" type="text" maxlength="255" required/></br>
+        <input name="title" id="title" type="text" maxlength="255" required/></br>
         <label for="gb-date">Date:</label>
-        <input id="date" type="date" maxlength="255" required/></br>
+        <input name="date" id="date" type="date" maxlength="255" required/></br>
         <label for="gb-content">Content:</label>
-        <input id="content" type="text" maxlength="255" required/></br>
+        <input name="content" id="content" type="text" maxlength="255" required/></br>
         <label for="gb-name"> Name:</label>
-        <input id="name" type="text" maxlength="255" required/></br>
+        <input name="name" id="name" type="text" maxlength="255" required/></br>
         <input type="submit" value="Submit"/>
     </form>
 

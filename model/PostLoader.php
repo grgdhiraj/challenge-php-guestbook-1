@@ -8,7 +8,7 @@ class PostLoader
         $list = [];
         $json = json_decode(file_get_contents("posts.json"),true);
         foreach ($json AS $jsonPost){
-            $list[] = new Post($jsonPost['title'],(int)$jsonPost['date'],$jsonPost['content'],$jsonPost['name']);
+            $list[] = new Post($jsonPost['title'],$jsonPost['date'],$jsonPost['content'],$jsonPost['name']);
 
         }
        // var_dump($list);

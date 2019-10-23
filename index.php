@@ -24,6 +24,6 @@ if(!isset($_GET['title']) && !isset($_GET['date']) && !isset($_GET['content']) &
 if(isset($_GET)) {
     var_dump($_GET);
 }
-    $controller->render("0",0, "0", "0");
+    $controller->render("0",'0', "0", "0");
     //$postController->render(((string)$_POST['title'], (int)$['date'], (string)$_GET['content'], (string)$_GET['name']););
 ?>
